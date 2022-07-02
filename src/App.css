@@ -52,5 +52,14 @@
 
 [contenteditable]:focus {
   outline: 0px solid transparent;
-  background: rgb(220, 220, 220);
+  /* background: rgb(220, 220, 220); */
+}
+
+[placeholder]:empty::before {
+  content: attr(placeholder);
+  color: #555;
+}
+
+[placeholder]:empty:focus::before {
+  content: attr(placeholder);
 }
