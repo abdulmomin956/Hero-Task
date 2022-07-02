@@ -28,7 +28,7 @@ const ToDo = () => {
 
     const handleAdd = (e) => {
         const data = { title: "", description: '' };
-        fetch('http://localhost:5000/add', {
+        fetch('https://honest-whistler-89456.herokuapp.com/add', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -98,7 +98,7 @@ const ToDo = () => {
     // const reverseData = allData?.data.reverse();
     // console.log(reverseData);
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://honest-whistler-89456.herokuapp.com/delete/${id}`, {
             method: "DELETE"
         }).then(res => res.json())
             .then(result => {
