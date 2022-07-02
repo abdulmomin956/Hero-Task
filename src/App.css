@@ -32,7 +32,25 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.task:hover {
+  background: rgb(220, 220, 220);
+  cursor: default;
+}
+
+.task:default {
+  background: white;
+  cursor: default;
+}
+
+
+
+[contenteditable]:focus {
+  outline: 0px solid transparent;
+  background: rgb(220, 220, 220);
 }
